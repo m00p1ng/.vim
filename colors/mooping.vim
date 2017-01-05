@@ -72,7 +72,7 @@ hi Pmenu        ctermfg=NONE ctermbg=059  cterm=NONE
 hi PmenuSel     ctermfg=NONE ctermbg=244  cterm=NONE
 "hi PmenuSbar
 "hi PmenuThumb
-hi MatchParen   ctermfg=204  ctermbg=NONE cterm=underline
+"hi MatchParen   ctermfg=NONE ctermbg=10  cterm=underline
 hi Cursor       ctermfg=235  ctermbg=231  cterm=NONE
 hi CursorLine   ctermfg=NONE ctermbg=237  cterm=NONE
 "hi CursorLineNr

@@ -23,7 +23,7 @@ Plugin 'google/vim-searchindex'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Yggdroot/indentLine'
+"Plugin 'Yggdroot/indentLine'
 
 " Syntax
 Plugin 'JulesWang/css.vim'

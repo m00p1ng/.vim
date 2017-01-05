@@ -13,8 +13,8 @@ autocmd Filetype output call TestfileSetting()
 autocmd Filetype java call JavaSetting()
 autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
 
-command! Wb w|bd
 command! Ccopy !cat %|pbcopy
+command! Reveal !open %
 
 function! MdSetting()
     setl wrap linebreak nolist wrapmargin=0 textwidth=0
@@ -38,6 +38,7 @@ function! CppSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
     command! Cppi w|!clear && g++ % && ./a.out < %.in
     command! Run w|!clear && g++ -std=c++11 % && ./a.out
+    command! Rund w|!clear && g++ -std=c++11 -DDEBUG % && ./a.out
     command! Cpp14 w|!clear && g++ -std=c++14 % && ./a.out
     command! -nargs=1 Cin w|call Cin(<f-args>)
     command! -nargs=1 Cout w|call Cout(<f-args>)

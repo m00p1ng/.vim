@@ -8,12 +8,9 @@ inoremap <Down> <NOP>
 inoremap <Left> <NOP>
 inoremap <Right> <NOP>
 
-" map cursor
-nnoremap <C-I> <TAB>
-
 " switch tab and buffer
-nnoremap <silent> <TAB> :bnext!<CR>
-nnoremap <silent> <S-TAB> :bprev!<CR>
+nnoremap <silent> ™ :bnext!<CR>
+nnoremap <silent> ¡ :bprev!<CR>
 nnoremap <leader>q :lnext<CR>
 nnoremap <leader>a :lprev<CR>
 
