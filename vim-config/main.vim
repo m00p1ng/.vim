@@ -1,10 +1,12 @@
 " LOAD CONFIG
-source ~/.vim/vim-config/vundle.vim
-source ~/.vim/vim-config/airline.vim
-source ~/.vim/vim-config/emmet.vim
-source ~/.vim/vim-config/keymap.vim
-source ~/.vim/vim-config/syntastic.vim
-source ~/.vim/vim-config/autocmd.vim
+let s:dirname = "~/.vim/vim-config"
+exec "source " . s:dirname . "/vundle.vim"
+exec "source " . s:dirname . "/airline.vim"
+exec "source " . s:dirname . "/emmet.vim"
+exec "source " . s:dirname . "/keymap.vim"
+exec "source " . s:dirname . "/syntastic.vim"
+exec "source " . s:dirname . "/autocmd.vim"
+exec "source " . s:dirname . "/ctest.vim"
 
 set laststatus=2
 syntax on
