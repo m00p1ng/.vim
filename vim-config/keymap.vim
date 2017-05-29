@@ -1,13 +1,3 @@
-" disable arrow key
-nnoremap <Up>   <NOP>
-nnoremap <Down> <NOP>
-nnoremap <Left> <NOP>
-nnoremap <Right> <NOP>
-inoremap <Up>   <NOP>
-inoremap <Down> <NOP>
-inoremap <Left> <NOP>
-inoremap <Right> <NOP>
-
 " switch tab and buffer
 nnoremap <silent> ™ :bnext!<CR>
 nnoremap <silent> ¡ :bprev!<CR>

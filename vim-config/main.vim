@@ -45,13 +45,15 @@ set ttimeoutlen=100
 set history=1000
 set cursorline
 
+set cm=blowfish2
+
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 let g:incsearch#auto_nohlsearch = 1
 map « :NERDTreeToggle<CR>
 
-let python_highlight_all = 1
+"let python_highlight_all = 1
 let g:pyindent_continue = '&sw'
 let g:pyindent_open_paren = '&sw'
 

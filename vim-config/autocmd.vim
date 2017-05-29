@@ -4,6 +4,7 @@ autocmd BufNewFile,BufRead *.cpp set omnifunc=omni#cpp#complete#Main
 autocmd Filetype markdown call MdSetting()
 autocmd Filetype python call PySetting()
 autocmd Filetype cpp call CppSetting()
+autocmd Filetype c call CSetting()
 autocmd Filetype javascript call JsSetting()
 autocmd Filetype ruby call RubySetting()
 autocmd Filetype html,php,htmldjango call HtmlSetting()
@@ -28,7 +29,15 @@ function! PySetting()
 endfunction
 
 function! HtmlSetting()
+    set tabstop=2
+    set shiftwidth=2
+    set backspace=1
     command! Web w|!open -a Safari %
+endfunction
+
+function! CSetting()
+    inoremap <buffer> {} {<CR>}<Esc>O
+    command! Run w|!clear && gcc % && ./a.out
 endfunction
 
 function! CppSetting()
@@ -52,5 +61,6 @@ endfunction
 
 function! JavaSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
-    command! Run w|!javac % && java %:t:r
+    command! Rund w|!javac % && java %:t:r
+    command! Run w|!javac % && java Main
 endfunction
