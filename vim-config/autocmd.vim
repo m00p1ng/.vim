@@ -9,16 +9,19 @@ autocmd Filetype javascript call JsSetting()
 autocmd Filetype ruby call RubySetting()
 autocmd Filetype html,php,htmldjango call HtmlSetting()
 autocmd Filetype java call JavaSetting()
+autocmd Filetype go call GoLangSetting()
 autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
 
 command! Copy w|!cat %|pbcopy
 command! Reveal w|!open %
+
 
 function! MdSetting()
     setl wrap linebreak nolist wrapmargin=0 textwidth=0
     inoremap <buffer> ** ****<Left><Left>
     inoremap <buffer> ``` ```<CR>```<UP>
 endfunction
+
 
 function! PySetting()
     command! Run w|!python %
@@ -28,6 +31,7 @@ function! PySetting()
     command! Python3 w|!python3 %
 endfunction
 
+
 function! HtmlSetting()
     set tabstop=2
     set shiftwidth=2
@@ -35,10 +39,12 @@ function! HtmlSetting()
     command! Web w|!open -a Safari %
 endfunction
 
+
 function! CSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
     command! Run w|!clear && gcc % && ./a.out
 endfunction
+
 
 function! CppSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
@@ -47,11 +53,13 @@ function! CppSetting()
     command! Run w|!clear && g++ -std=c++11 % && ./a.out
 endfunction
 
+
 function! JsSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
     setl shiftwidth=2 tabstop=2
     setl syntax=javascript.jsx
 endfunction
+
 
 function! RubySetting()
     set tabstop=2
@@ -59,8 +67,15 @@ function! RubySetting()
     set backspace=1
 endfunction
 
+
 function! JavaSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
     command! Rund w|!javac % && java %:t:r
     command! Run w|!javac % && java Main
 endfunction
+
+
+function GoLangSetting()
+    inoremap <buffer> {} {<CR>}<Esc>O
+    command! Run w|! go run %
+endfunction 
