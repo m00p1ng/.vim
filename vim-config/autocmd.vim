@@ -12,9 +12,11 @@ autocmd Filetype java call JavaSetting()
 autocmd Filetype go call GoLangSetting()
 autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
 
-command! Copy w|!cat %|pbcopy
-command! Reveal w|!open %
+let fn = fnameescape(expand('%'))
+let fnwext = fnameescape(expand('%:t:r'))
 
+command! Copy w| silent %y+
+command! Reveal w| exec("silent! !open " . fn) | redraw!
 
 function! MdSetting()
     setl wrap linebreak nolist wrapmargin=0 textwidth=0
@@ -24,11 +26,11 @@ endfunction
 
 
 function! PySetting()
-    command! Run w|!python %
-    command! Py w|!python %
-    command! Py3 w|!python3 %
-    command! Python w|!python %
-    command! Python3 w|!python3 %
+    command! Run w|exec("!python " . fn)
+    command! Py w|exec("!python " . fn)
+    command! Py3 w|exec("!python3 " . fn)
+    command! Python w|exec("!python " .fn)
+    command! Python3 w|exec("!python3 " . fn)
 endfunction
 
 
@@ -36,21 +38,21 @@ function! HtmlSetting()
     set tabstop=2
     set shiftwidth=2
     set backspace=1
-    command! Web w|!open -a Safari %
+    command! Web w|exec("!open -a Safari " . fn)
 endfunction
 
 
 function! CSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
-    command! Run w|!clear && gcc % && ./a.out
+    command! Run w|exec("!clear && gcc " . fn ." && ./a.out")
 endfunction
 
 
 function! CppSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
-    command! Cppi w|!clear && g++ % && ./a.out < %.in
-    command! Cpp14 w|!clear && g++ -std=c++14 % && ./a.out
-    command! Run w|!clear && g++ -std=c++11 % && ./a.out
+    command! Cppi w|exec("!clear && g++ -O2" . fn " && ./a.out < %.in")
+    command! Cpp14 w|exec("!clear && g++ -O2 -std=c++14 " . fn . " && ./a.out")
+    command! Run w|exec("!clear && g++ -O2 -std=c++11 ". fn . "&& ./a.out")
 endfunction
 
 
@@ -70,12 +72,12 @@ endfunction
 
 function! JavaSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
-    command! Rund w|!javac % && java %:t:r
-    command! Run w|!javac % && java Main
+    command! Rund w|exec("!javac ". fn . " && java " . fnwoext))
+    command! Run w|exec("!javac " . fn . " && java Main")
 endfunction
 
 
 function GoLangSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
-    command! Run w|! go run %
+    command! Run w| exec("!go run " . fn)
 endfunction 
