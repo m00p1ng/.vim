@@ -10,7 +10,8 @@ exec "source " . s:dirname . "/ctest.vim"
 
 set laststatus=2
 syntax on
-colorscheme mooping
+"colorscheme mooping
+colorscheme codedark
 set background=dark
 
 set number
@@ -65,7 +66,7 @@ let g:vim_markdown_folding_disabled = 1
 let g:javascript_plugin_jsdoc = 1
 let g:jsx_ext_required = 0
 
-hi Comment ctermfg=243
-hi Special ctermfg=141
+"hi Comment ctermfg=243
+"hi Special ctermfg=141
 
-let g:indentLine_char = '┆'
+"let g:indentLine_char = '┆'
