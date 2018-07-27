@@ -5,6 +5,7 @@ autocmd Filetype markdown call MdSetting()
 autocmd Filetype python call PySetting()
 autocmd Filetype cpp call CppSetting()
 autocmd Filetype c call CSetting()
+autocmd Filetype cs call CsharpSetting()
 autocmd Filetype javascript call JsSetting()
 autocmd Filetype ruby call RubySetting()
 autocmd Filetype html,php,htmldjango call HtmlSetting()
@@ -72,7 +73,7 @@ endfunction
 
 function! JavaSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
-    command! Rund w|exec("!javac ". fn . " && java " . fnwoext))
+    command! Rund w|exec("!javac ". fn . " && java " . fnwoext)
     command! Run w|exec("!javac " . fn . " && java Main")
 endfunction
 
@@ -81,3 +82,9 @@ function GoLangSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
     command! Run w| exec("!go run " . fn)
 endfunction 
+
+function CsharpSetting()
+    inoremap <buffer> {} {<CR>}<Esc>O
+    command! Run w| exec("!mcs ". fn . " && mono " . fnwoext . ".exe")
+endfunction
+
