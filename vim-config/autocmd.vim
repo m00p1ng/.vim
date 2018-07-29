@@ -36,9 +36,7 @@ endfunction
 
 
 function! HtmlSetting()
-    set tabstop=2
-    set shiftwidth=2
-    set backspace=1
+    setl tabstop=2 shiftwidth=2
     command! Web w|exec("!open -a Safari " . fn)
 endfunction
 
@@ -65,9 +63,8 @@ endfunction
 
 
 function! RubySetting()
-    set tabstop=2
-    set shiftwidth=2
-    set backspace=1
+    setl tabstop=2 shiftwidth=2
+    command! Run w|exec("!ruby " . fn)
 endfunction
 
 
