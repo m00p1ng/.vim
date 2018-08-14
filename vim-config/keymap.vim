@@ -4,10 +4,6 @@ nnoremap <silent> ¡ :bprev!<CR>
 nnoremap <leader>q :lnext<CR>
 nnoremap <leader>a :lprev<CR>
 
-" custom command
-nnoremap U <C-R>
-nnoremap D :%d<CR>
-
 inoremap <C-F> <C-X><C-F>
 nnoremap <silent> <CR> :noh<CR>
 
