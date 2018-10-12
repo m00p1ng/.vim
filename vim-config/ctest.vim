@@ -4,7 +4,7 @@ autocmd BufNewFile,BufRead *.in set filetype=input
 autocmd BufNewFile,BufRead *.out set filetype=output
 
 let fn = fnameescape(expand('%'))
-let cmdtest = "python ~/.dotfile/command/ctest.py"
+let cmdtest = "python ~/.dotfiles/command/ctest.py"
 let g:fnwoext = fnameescape(expand('%:t:r'))
 let g:dirname = 'testcase'
 
@@ -17,8 +17,8 @@ function! Ctest()
     command! -nargs=1 Cinout   w|call Cinout(<f-args>)
     command! Ctest             w| exec("! " . cmdtest. " " . fn)
     command! Cdebug            w| exec("! " . cmdtest . " "  . fn . " debug")
-    command! Cdiff             w| exec("!clear && " . cmdtest . " " . fn . " diff | less")
-    command! Cdiffall          w| exec("!clear && " . cmdtest . " " . fn . " diff all | less")
+    command! Cdiff             w| exec("!clear && " . cmdtest . " " . fn . " diff")
+    command! Cdiffall          w| exec("!clear && " . cmdtest . " " . fn . " diff all")
     command! -nargs=1 Ccase    w| exec("!" . cmdtest . " " . fn . " diff case " . <f-args>)
     command! -nargs=1 Ccaseall w| exec("!" . cmdtest . " " . fn . " diff all case " . <f-args>)
 endfunction

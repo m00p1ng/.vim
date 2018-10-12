@@ -10,7 +10,6 @@ exec "source " . s:dirname . "/ctest.vim"
 
 set laststatus=2
 syntax on
-"colorscheme mooping
 colorscheme codedark
 set background=dark
 
@@ -49,8 +48,6 @@ set cursorline
 set cm=blowfish2
 
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-map / <Plug>(incsearch-forward)
-map ? <Plug>(incsearch-backward)
 let g:incsearch#auto_nohlsearch = 1
 map « :NERDTreeToggle<CR>
 
@@ -61,12 +58,5 @@ let g:pyindent_open_paren = '&sw'
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 
-let g:vim_markdown_folding_disabled = 1
-
-let g:javascript_plugin_jsdoc = 1
-let g:jsx_ext_required = 0
-
 "hi Comment ctermfg=243
 "hi Special ctermfg=141
-
-"let g:indentLine_char = '┆'
