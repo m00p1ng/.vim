@@ -1,5 +1,6 @@
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx
+autocmd BufNewFile,BufRead *.tsx set filetype=javascript.jsx
 autocmd BufNewFile,BufRead *.cpp set omnifunc=omni#cpp#complete#Main
 autocmd Filetype markdown call MdSetting()
 autocmd Filetype python call PySetting()

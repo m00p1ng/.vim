@@ -17,3 +17,5 @@ nnoremap ˙ <C-W>H
 map <leader>e <plug>NERDCommenterToggle
 
 vnoremap ç :w !pbcopy<CR><CR>
+nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+ 

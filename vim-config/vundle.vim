@@ -23,7 +23,10 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'm00p1ng/vim-code-dark'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'zivyangll/git-blame.vim'
 
 " Syntax
 Plugin 'hdima/python-syntax'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
