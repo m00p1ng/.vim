@@ -1,6 +1,4 @@
-autocmd BufNewFile,BufRead *.coffee set filetype=coffee
-autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx
-autocmd BufNewFile,BufRead *.tsx set filetype=javascript.jsx
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 autocmd BufNewFile,BufRead *.cpp set omnifunc=omni#cpp#complete#Main
 autocmd Filetype markdown call MdSetting()
 autocmd Filetype python call PySetting()
@@ -79,10 +77,9 @@ endfunction
 function GoLangSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
     command! Run w| exec("!go run " . fn)
-endfunction 
+endfunction
 
 function CsharpSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
     command! Run w| exec("!mcs ". fn . " && mono " . fnwoext . ".exe")
 endfunction
-
