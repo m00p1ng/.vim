@@ -1,6 +1,6 @@
 " LOAD CONFIG
 let s:dirname = "~/.vim/vim-config"
-exec "source " . s:dirname . "/vundle.vim"
+exec "source " . s:dirname . "/plugin.vim"
 exec "source " . s:dirname . "/airline.vim"
 exec "source " . s:dirname . "/emmet.vim"
 exec "source " . s:dirname . "/keymap.vim"
@@ -13,7 +13,7 @@ syntax on
 colorscheme codedark
 set background=dark
 
-set number
+set number relativenumber
 set ruler
 
 filetype indent on
