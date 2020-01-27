@@ -16,7 +16,9 @@ nnoremap ˙ <C-W>H
 " map plugin
 map <leader>e <plug>NERDCommenterToggle
 
-vnoremap ç :w !pbcopy<CR><CR>
+vnoremap ç "+y
+nnoremap √ "+p
+inoremap √ <C-c>"+pi
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
  
 
