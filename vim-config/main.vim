@@ -13,7 +13,7 @@ syntax on
 colorscheme codedark
 set background=dark
 
-set number relativenumber
+set number
 set ruler
 
 filetype indent on
@@ -23,9 +23,9 @@ set wildmode=longest,full
 set wildignore+=*/tmp/*,*/bundle/*
 set wildignore+=*.so,*.swp
 set wildignore+=*.zip,*.rar
-set wildignore+=*.mp4,*.avi,*.mkv,*.flv
-set wildignore+=*.iso
-set wildignore+=*.pyc
+set wildignore+=*.mp4,*.avi,*.mkv,*.flv,*.wmv
+set wildignore+=*.iso,*.img
+set wildignore+=*.pyc,*pyo
 set wildignore+=*.class
 set wildignore+=*.pdf,*.doc,*.docx,*.ppt,*.pptx
 set wildignore+=*.jpg,*.jpeg,*.png,*.gif,*.ico
