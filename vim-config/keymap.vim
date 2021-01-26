@@ -20,7 +20,9 @@ vnoremap ç "+y
 nnoremap √ "+p
 inoremap √ <C-c>"+pi
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
- 
+
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
 
 " Tab or autocomplete
 function! InsertTabWrapper()
@@ -45,5 +47,4 @@ function! RenameFile()
         redraw!
     endif
 endfunction
-map <leader>n :call RenameFile()<cr>
-
+map <leader>rn :call RenameFile()<cr>
