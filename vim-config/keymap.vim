@@ -1,5 +1,7 @@
 " switch tab and buffer
+" Option + 2
 nnoremap <silent> ™ :bnext!<CR>
+" Option + 1
 nnoremap <silent> ¡ :bprev!<CR>
 nnoremap <leader>q :lnext<CR>
 nnoremap <leader>a :lprev<CR>
@@ -8,16 +10,23 @@ inoremap <C-F> <C-X><C-F>
 nnoremap <silent> <CR> :noh<CR>
 
 " swap window split
+" Option + J
 nnoremap ∆ <C-W>J
+" Option + K
 nnoremap ˚ <C-W>K
+" Option + L
 nnoremap ¬ <C-W>L
+" Option + H
 nnoremap ˙ <C-W>H
 
 " map plugin
 map <leader>e <plug>NERDCommenterToggle
 
+" Option + C
 vnoremap ç "+y
+" Option + V
 nnoremap √ "+p
+" Option + V
 inoremap √ <C-c>"+pi
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 
