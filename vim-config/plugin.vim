@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 "Plug 'jiangmiao/auto-pairs'
 "Plug 'zivyangll/git-blame.vim'
 "Plug 'zxqfl/tabnine-vim'
+"Plug 'w0rp/ale'
 Plug 'APZelos/blamer.nvim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
@@ -23,7 +24,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-syntastic/syntastic'
-Plug 'w0rp/ale'
 
 " Syntax
 Plug 'hdima/python-syntax'

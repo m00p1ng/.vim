@@ -8,6 +8,7 @@ exec "source " . s:dirname . "/syntastic.vim"
 exec "source " . s:dirname . "/autocmd.vim"
 exec "source " . s:dirname . "/ctest.vim"
 exec "source " . s:dirname . "/nerd-tree.vim"
+exec "source " . s:dirname . "/coc.vim"
 
 set laststatus=2
 syntax on
@@ -47,14 +48,17 @@ set history=1000
 set cursorline
 set splitbelow
 
-set cm=blowfish2
+
+if has('vim')
+    set cm=blowfish2
+endif
 
 if executable('rg')
-  set grepprg=rg\ --color=never
-  let g:ctrlp_user_command = 'rg %s --files -g ' . "'!.git'" . ' --hidden --color=never --glob ""'
-  let g:ctrlp_use_caching = 0
+    set grepprg=rg\ --color=never
+    let g:ctrlp_user_command = 'rg %s --files -g ' . "'!.git'" . ' --hidden --color=never --glob ""'
+    let g:ctrlp_use_caching = 0
 else
-  let g:ctrlp_clear_cache_on_exit = 0
+    let g:ctrlp_clear_cache_on_exit = 0
 endif
 let g:ctrlp_match_window = 'order:ttb'
 let g:ctrlp_use_caching = 0
@@ -74,14 +78,14 @@ let g:pyindent_open_paren = '&sw'
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 
-let g:ale_sign_error = '❌'
-let g:ale_sign_warning = '⚠️'
-let g:ale_fix_on_save = 1
+"let g:ale_sign_error = '❌'
+"let g:ale_sign_warning = '⚠️'
+"let g:ale_fix_on_save = 1
 
-let g:ale_fixers = {
- \  '*': ['remove_trailing_lines', 'trim_whitespace'],
- \ 'javascript': ['eslint']
- \ }
+"let g:ale_fixers = {
+ "\  '*': ['remove_trailing_lines', 'trim_whitespace'],
+ "\ 'javascript': ['eslint']
+ "\ }
 
 let g:NERDTreeGitStatusShowIgnored = 1
 
