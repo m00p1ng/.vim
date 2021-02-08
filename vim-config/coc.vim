@@ -1,12 +1,13 @@
 " TextEdit might fail if hidden is not set.
 set hidden
+" mooping are cool
 
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
 
 " Give more space for displaying messages.
-set cmdheight=2
+"set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -46,9 +47,13 @@ let g:coc_global_extensions = [
   \'coc-cssmodules',
   \'coc-clangd',
   \'coc-cmake',
+  \'coc-grammarly',
+  \'coc-marketplace',
   \'coc-diagnostic',
   \'coc-explorer',
   \'coc-spell-checker',
+  \'coc-cspell-dicts',
+  \'coc-docker',
   \'coc-solargraph',
   \'coc-sql',
   \'coc-fzf-preview',

@@ -71,23 +71,8 @@ let g:blamer_relative_time = 1
 
 let g:incsearch#auto_nohlsearch = 1
 
-"let python_highlight_all = 1
-let g:pyindent_continue = '&sw'
-let g:pyindent_open_paren = '&sw'
-
-let g:cpp_class_scope_highlight = 1
-let g:cpp_experimental_template_highlight = 1
-
-"let g:ale_sign_error = '❌'
-"let g:ale_sign_warning = '⚠️'
-"let g:ale_fix_on_save = 1
-
-"let g:ale_fixers = {
- "\  '*': ['remove_trailing_lines', 'trim_whitespace'],
- "\ 'javascript': ['eslint']
- "\ }
-
 let g:NERDTreeGitStatusShowIgnored = 1
 
-"hi Comment ctermfg=243
-"hi Special ctermfg=141
+let g:far#window_min_content_width=30
+let g:far#window_width=60
+
