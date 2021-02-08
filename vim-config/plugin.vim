@@ -26,11 +26,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-syntastic/syntastic'
 
 " Syntax
-Plug 'hdima/python-syntax'
-Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+"Plug 'hdima/python-syntax'
+"Plug 'octol/vim-cpp-enhanced-highlight'
+"Plug 'pangloss/vim-javascript'
+"Plug 'mxw/vim-jsx'
+"Plug 'leafgarland/typescript-vim'
+"Plug 'peitalin/vim-jsx-typescript'
 
 call plug#end()
