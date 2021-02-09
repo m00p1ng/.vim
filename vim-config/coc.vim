@@ -1,6 +1,5 @@
 " TextEdit might fail if hidden is not set.
 set hidden
-" mooping are cool
 
 " Some servers have issues with backup files, see #649.
 set nobackup
@@ -14,7 +13,7 @@ set nowritebackup
 set updatetime=300
 
 " Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
+set shortmess+=cS
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
@@ -39,6 +38,7 @@ set shortmess+=c
   "return !col || getline('.')[col - 1]  =~# '\s'
 "endfunction
 
+"\'coc-grammarly',
 let g:coc_global_extensions = [
   \'coc-css',
   \'coc-cssmodules',
@@ -47,7 +47,7 @@ let g:coc_global_extensions = [
   \'coc-cssmodules',
   \'coc-clangd',
   \'coc-cmake',
-  \'coc-grammarly',
+  \'coc-floaterm',
   \'coc-marketplace',
   \'coc-diagnostic',
   \'coc-explorer',
