@@ -13,3 +13,5 @@ nmap <leader>hu <Plug>(GitGutterUndoHunk)
 nmap <leader>gd :FloatermNew --autoclose=2 --disposable git diff HEAD %:p<CR>
 nmap <leader>gsd :FloatermNew --autoclose=2 --disposable git diffs HEAD %:p<CR>
 nmap <leader>gst :FloatermNew --autoclose=2 --disposable git fuzzy status<CR>
+nmap <leader>gll :FloatermNew --autoclose=2 --disposable source ~/.zshrc && git_log_fff %<CR>
+nmap <leader>glg :FloatermNew --autoclose=2 --disposable source ~/.zshrc && git_log_fff<CR>
