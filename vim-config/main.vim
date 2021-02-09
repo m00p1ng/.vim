@@ -4,11 +4,12 @@ exec "source " . s:dirname . "/plugin.vim"
 exec "source " . s:dirname . "/airline.vim"
 exec "source " . s:dirname . "/emmet.vim"
 exec "source " . s:dirname . "/keymap.vim"
-exec "source " . s:dirname . "/syntastic.vim"
 exec "source " . s:dirname . "/autocmd.vim"
 exec "source " . s:dirname . "/ctest.vim"
 exec "source " . s:dirname . "/nerd-tree.vim"
 exec "source " . s:dirname . "/coc.vim"
+exec "source " . s:dirname . "/floaterm.vim"
+exec "source " . s:dirname . "/git.vim"
 
 set laststatus=2
 syntax on
@@ -47,7 +48,7 @@ set ttimeoutlen=100
 set history=1000
 set cursorline
 set splitbelow
-
+set noshowcmd
 
 if has('vim')
     set cm=blowfish2
@@ -63,15 +64,7 @@ endif
 let g:ctrlp_match_window = 'order:ttb'
 let g:ctrlp_use_caching = 0
 
-let g:blamer_enabled = 1
-let g:blamer_delay = 200
-let g:blamer_show_in_visual_modes = 0
-let g:blamer_show_in_insert_modes = 0
-let g:blamer_relative_time = 1
-
 let g:incsearch#auto_nohlsearch = 1
-
-let g:NERDTreeGitStatusShowIgnored = 1
 
 let g:far#window_min_content_width=30
 let g:far#window_width=60

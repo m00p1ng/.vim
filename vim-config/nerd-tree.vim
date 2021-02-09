@@ -1,5 +1,7 @@
 nnoremap <leader>n :NERDTreeFocus<CR>
 
+let g:NERDTreeGitStatusShowIgnored = 1
+
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
 "autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |

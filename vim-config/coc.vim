@@ -47,6 +47,7 @@ let g:coc_global_extensions = [
   \'coc-cssmodules',
   \'coc-clangd',
   \'coc-cmake',
+  \'coc-tabnine',
   \'coc-floaterm',
   \'coc-marketplace',
   \'coc-diagnostic',

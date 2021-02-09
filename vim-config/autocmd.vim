@@ -1,4 +1,4 @@
-autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
 autocmd BufNewFile,BufRead *.cpp set omnifunc=omni#cpp#complete#Main
 autocmd Filetype markdown call MdSetting()
 autocmd Filetype python call PySetting()

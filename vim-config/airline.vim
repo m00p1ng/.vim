@@ -24,7 +24,6 @@ let g:airline#extensions#tabline#show_splits = 0
 let g:airline#extensions#tabline#show_tab_nr = 0
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-
 let g:tmuxline_separators = {
   \ 'left' : '⮀',
   \ 'left_alt': '⮁',
