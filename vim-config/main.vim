@@ -10,6 +10,7 @@ exec "source " . s:dirname . "/nerd-tree.vim"
 exec "source " . s:dirname . "/coc.vim"
 exec "source " . s:dirname . "/floaterm.vim"
 exec "source " . s:dirname . "/git.vim"
+exec "source " . s:dirname . "/fzf.vim"
 
 set laststatus=2
 syntax on
@@ -50,19 +51,36 @@ set cursorline
 set splitbelow
 set noshowcmd
 
+" TextEdit might fail if hidden is not set.
+set hidden
+
+" Some servers have issues with backup files, see #649.
+set nobackup
+set nowritebackup
+
+" Give more space for displaying messages.
+"set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=cS
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+"if has("patch-8.1.1564")
+  "" Recently vim can merge signcolumn and number column into one
+  "set signcolumn=number
+"else
+  "set signcolumn=yes
+"endif
+
+
 if has('vim')
     set cm=blowfish2
 endif
-
-if executable('rg')
-    set grepprg=rg\ --color=never
-    let g:ctrlp_user_command = 'rg %s --files -g ' . "'!.git'" . ' --hidden --color=never --glob ""'
-    let g:ctrlp_use_caching = 0
-else
-    let g:ctrlp_clear_cache_on_exit = 0
-endif
-let g:ctrlp_match_window = 'order:ttb'
-let g:ctrlp_use_caching = 0
 
 let g:incsearch#auto_nohlsearch = 1
 

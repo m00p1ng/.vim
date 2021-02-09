@@ -29,11 +29,6 @@ nnoremap √ "+p
 " Option + V
 inoremap √ <C-c>"+pi
 
-nnoremap <leader>pf :Files<CR>
-nnoremap <leader>pg :GFiles<CR>
-nnoremap <leader>ps :Rg<CR>
-nnoremap <leader>rg :Rg <C-R><C-W><CR>
-
 " Tab or autocomplete
 function! InsertTabWrapper()
     let col = col('.') - 1

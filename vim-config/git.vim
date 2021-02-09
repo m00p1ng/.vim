@@ -11,4 +11,5 @@ nmap <leader>hp <Plug>(GitGutterPreviewHunk)
 nmap <leader>hs <Plug>(GitGutterStageHunk)
 nmap <leader>hu <Plug>(GitGutterUndoHunk)
 nmap <leader>gd :FloatermNew --autoclose=2 --disposable git diff HEAD %:p<CR>
-nmap <leader>gs :FloatermNew --autoclose=2 --disposable git diffs HEAD %:p<CR>
+nmap <leader>gsd :FloatermNew --autoclose=2 --disposable git diffs HEAD %:p<CR>
+nmap <leader>gst :FloatermNew --autoclose=2 --disposable git fuzzy status<CR>

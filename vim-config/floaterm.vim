@@ -1,4 +1,5 @@
-let g:floaterm_width=0.8
+let g:floaterm_height=0.9
+let g:floaterm_width=0.9
 
 nnoremap <silent> <leader>tc :FloatermNew<CR>
 tnoremap <silent> <leader>tc <C-\><C-n>:FloatermNew<CR>
