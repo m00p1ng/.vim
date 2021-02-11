@@ -1,0 +1,11 @@
+{
+    "typescript.format.enabled": true,
+    "javascript.format.enabled": true,
+    "eslint.autoFixOnSave": true,
+    "tslint.autoFixOnSave": true,
+    "diagnostic.errorSign": "❌",
+    "diagnostic.warningSign": "⚠️",
+    "diagnostic.infoSign": "ℹ️",
+    "diagnostic.hintSign": "⚠️",
+    "codeLens.enable": true
+}

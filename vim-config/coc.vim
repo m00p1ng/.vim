@@ -11,7 +11,6 @@ let g:coc_global_extensions = [
   \'coc-marketplace',
   \'coc-diagnostic',
   \'coc-spell-checker',
-  \'coc-cspell-dicts',
   \'coc-docker',
   \'coc-solargraph',
   \'coc-sql',

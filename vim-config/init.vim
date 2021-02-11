@@ -86,8 +86,21 @@ if has('vim')
     set cm=blowfish2
 endif
 
-let g:incsearch#auto_nohlsearch = 1
+let g:incsearch#auto_nohlsearch=1
 
 let g:far#window_min_content_width=30
 let g:far#window_width=60
+
+let g:python_highlight_operators=0
+let g:python_highlight_all=1
+
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
+let g:strip_whitespace_confirm=0
+
+let g:better_whitespace_filetypes_blacklist=[
+    \'qf',
+    \'help',
+    \'far'
+    \]
 
