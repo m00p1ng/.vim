@@ -6,6 +6,10 @@
     "diagnostic.errorSign": "❌",
     "diagnostic.warningSign": "⚠️",
     "diagnostic.infoSign": "ℹ️",
-    "diagnostic.hintSign": "⚠️",
-    "codeLens.enable": true
+    "diagnostic.hintSign": "❓",
+    "codeLens.enable": true,
+    "cSpell.showStatus": false,
+    "cSpell.userWords": [
+      "mooping"
+    ]
 }

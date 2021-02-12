@@ -3,7 +3,7 @@ let g:fzf_preview_use_dev_icons = 1
 nmap <leader>f [fzf-p]
 xmap <leader>f [fzf-p]
 
-nnoremap <silent> [fzf-p]p     :<C-u>FzfPreviewFromResources project_mru git<CR>
+nnoremap <silent> [fzf-p]p     :<C-u>FzfPreviewFromResources project_mru project<CR>
 nnoremap <silent> [fzf-p]ga    :<C-u>FzfPreviewGitActions<CR>
 nnoremap <silent> [fzf-p]b     :<C-u>FzfPreviewBuffers<CR>
 nnoremap <silent> [fzf-p]B     :<C-u>FzfPreviewAllBuffers<CR>
