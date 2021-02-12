@@ -1,7 +1,3 @@
-" switch tab and buffer
-nnoremap <leader>q :lnext<CR>
-nnoremap <leader>a :lprev<CR>
-
 nnoremap <silent> <CR> :noh<CR>
 
 " map plugin
