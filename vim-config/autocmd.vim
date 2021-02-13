@@ -1,5 +1,6 @@
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.jsx
-autocmd BufNewFile,BufRead *.cpp set omnifunc=omni#cpp#complete#Main
+autocmd BufNewFile,BufRead *.zsh-theme set filetype=zsh
+
 autocmd Filetype markdown call MdSetting()
 autocmd Filetype python call PySetting()
 autocmd Filetype cpp call CppSetting()
@@ -57,7 +58,6 @@ endfunction
 function! JsSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
     setl shiftwidth=2 tabstop=2
-    setl syntax=javascript.jsx
 endfunction
 
 
@@ -78,6 +78,7 @@ function GoLangSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
     command! Run w| exec("!go run " . fn)
 endfunction
+
 
 function CsharpSetting()
     inoremap <buffer> {} {<CR>}<Esc>O

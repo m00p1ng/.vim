@@ -35,9 +35,9 @@ set wildignore+=*.pdf,*.doc,*.docx,*.ppt,*.pptx
 set wildignore+=*.jpg,*.jpeg,*.png,*.gif,*.ico
 
 set autoindent
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set backspace=2
 set expandtab
 
@@ -102,5 +102,10 @@ let g:better_whitespace_filetypes_blacklist=[
     \'qf',
     \'help',
     \'far'
-    \]
+\]
+
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+
 

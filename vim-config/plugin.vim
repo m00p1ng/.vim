@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/vim-unimpaired'
 Plug 'APZelos/blamer.nvim'
 Plug 'PhilRunninger/nerdtree-visual-selection'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -22,7 +21,9 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
 Plug 'unkiwii/vim-nerdtree-sync'
 Plug 'vim-airline/vim-airline'
 Plug 'voldikss/vim-floaterm'
