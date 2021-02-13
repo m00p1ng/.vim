@@ -8,6 +8,18 @@
     "diagnostic.infoSign": "ℹ️",
     "diagnostic.hintSign": "❓",
     "codeLens.enable": true,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "javascriptreact",
+        "javascript.jsx",
+        "typescript",
+        "typescript.jsx",
+        "typescript.tsx",
+        "typescriptreact",
+        "css",
+        "json"
+    ],
+    "coc.preferences.formatOnType": true,
     "cSpell.showStatus": false,
     "cSpell.userWords": [
       "mooping"

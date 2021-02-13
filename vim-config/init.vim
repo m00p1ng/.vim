@@ -5,7 +5,6 @@ exec "source " . s:dirname . "/airline.vim"
 exec "source " . s:dirname . "/emmet.vim"
 exec "source " . s:dirname . "/keymap.vim"
 exec "source " . s:dirname . "/autocmd.vim"
-exec "source " . s:dirname . "/ctest.vim"
 exec "source " . s:dirname . "/nerd-tree.vim"
 exec "source " . s:dirname . "/coc.vim"
 exec "source " . s:dirname . "/floaterm.vim"
@@ -49,7 +48,6 @@ set ttimeoutlen=100
 set history=1000
 set cursorline
 set splitbelow
-set noshowcmd
 
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -104,8 +102,8 @@ let g:better_whitespace_filetypes_blacklist=[
     \'far'
 \]
 
-let g:NERDSpaceDelims = 1
-let g:NERDCompactSexyComs = 1
-let g:NERDDefaultAlign = 'left'
+let g:NERDSpaceDelims=1
+let g:NERDCompactSexyComs=1
+let g:NERDDefaultAlign='left'
 
-
+let g:startify_files_number=20

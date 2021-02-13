@@ -18,6 +18,7 @@ let fnwext = fnameescape(expand('%:t:r'))
 
 command! Copy w| silent %y+
 command! Reveal w| exec("silent! !open " . fn) | redraw!
+command! Cd :cd %:p:h
 
 function! MdSetting()
     setl wrap linebreak nolist wrapmargin=0 textwidth=0

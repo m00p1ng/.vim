@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'liuchengxu/vista.vim'
 Plug 'APZelos/blamer.nvim'
 Plug 'PhilRunninger/nerdtree-visual-selection'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -9,6 +10,7 @@ Plug 'chakrit/vim-thai-keys'
 Plug 'google/vim-searchindex'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'm00p1ng/ctest.vim'
 Plug 'm00p1ng/vim-code-dark'
 Plug 'mattn/emmet-vim'
 Plug 'metakirby5/codi.vim'
