@@ -1,3 +1,8 @@
+if has('nvim')
+    set runtimepath+=~/.vim,~/.vim/after
+    set packpath+=~/.vim
+endif
+
 " LOAD CONFIG
 let s:dirname = "~/.vim/vim-config"
 exec "source " . s:dirname . "/plugin.vim"
@@ -74,11 +79,6 @@ set shortmess+=cS
 "else
   "set signcolumn=yes
 "endif
-
-if has('nvim')
-    set runtimepath+=~/.vim,~/.vim/after
-    set packpath+=~/.vim
-endif
 
 if has('vim')
     set cm=blowfish2

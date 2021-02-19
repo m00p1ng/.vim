@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'liuchengxu/vista.vim'
 Plug 'APZelos/blamer.nvim'
 Plug 'PhilRunninger/nerdtree-visual-selection'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -10,6 +9,7 @@ Plug 'chakrit/vim-thai-keys'
 Plug 'google/vim-searchindex'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'liuchengxu/vista.vim'
 Plug 'm00p1ng/ctest.vim'
 Plug 'm00p1ng/vim-code-dark'
 Plug 'mattn/emmet-vim'
@@ -29,7 +29,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'unkiwii/vim-nerdtree-sync'
 Plug 'vim-airline/vim-airline'
 Plug 'voldikss/vim-floaterm'
-Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/remote', 'do': ':UpdateRemotePlugins' }
 
 " Syntax
 "Plug 'peitalin/vim-jsx-typescript'
