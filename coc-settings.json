@@ -5,9 +5,9 @@
     "tslint.autoFixOnSave": true,
     "diagnostic.errorSign": "❌",
     "diagnostic.warningSign": "⚠️",
-    "diagnostic.infoSign": "ℹ️",
-    "diagnostic.hintSign": "❓",
-    "codeLens.enable": true,
+    "diagnostic.infoSign": "i",
+    "diagnostic.hintSign": "❔",
+    // "codeLens.enable": true,
     "coc.preferences.formatOnSaveFiletypes": [
         "javascript",
         "javascriptreact",

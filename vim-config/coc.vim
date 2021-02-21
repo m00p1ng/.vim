@@ -16,7 +16,7 @@ let g:coc_global_extensions = [
   \'coc-sql',
   \'coc-calc',
   \'coc-go',
-  \'coc-python',
+  \'coc-pyright',
   \'coc-git',
   \'coc-html',
   \'coc-json',
