@@ -37,7 +37,6 @@ endfunction
 
 
 function! HtmlSetting()
-    setl tabstop=2 shiftwidth=2
     command! Web w|exec("!open -a Safari " . fn)
 endfunction
 
@@ -49,6 +48,7 @@ endfunction
 
 
 function! CppSetting()
+    setl tabstop=4 shiftwidth=4
     inoremap <buffer> {} {<CR>}<Esc>O
     command! Cppi w|exec("!clear && g++ -O2" . fn " && ./a.out < %.in")
     command! Cpp14 w|exec("!clear && g++ -O2 -std=c++14 " . fn . " && ./a.out")
@@ -58,17 +58,16 @@ endfunction
 
 function! JsSetting()
     inoremap <buffer> {} {<CR>}<Esc>O
-    setl shiftwidth=2 tabstop=2
 endfunction
 
 
 function! RubySetting()
-    setl tabstop=2 shiftwidth=2
     command! Run w|exec("!ruby " . fn)
 endfunction
 
 
 function! JavaSetting()
+    setl tabstop=4 shiftwidth=4
     inoremap <buffer> {} {<CR>}<Esc>O
     command! Rund w|exec("!javac ". fn . " && java " . fnwoext)
     command! Run w|exec("!javac " . fn . " && java Main")
@@ -76,6 +75,7 @@ endfunction
 
 
 function GoLangSetting()
+    setl tabstop=4 shiftwidth=4
     inoremap <buffer> {} {<CR>}<Esc>O
     command! Run w| exec("!go run " . fn)
 endfunction

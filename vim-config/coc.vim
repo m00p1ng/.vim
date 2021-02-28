@@ -24,8 +24,13 @@ let g:coc_global_extensions = [
   \'coc-tag',
   \'coc-tsserver',
   \'coc-tslint',
-  \'coc-eslint'
+  \'coc-eslint',
+  \'coc-java'
 \]
+
+if has('mac')
+  let g:python3_host_prog = '/opt/homebrew/bin/python3'
+endif
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by

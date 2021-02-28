@@ -3,8 +3,8 @@
     "javascript.format.enabled": true,
     "eslint.autoFixOnSave": true,
     "tslint.autoFixOnSave": true,
-    "diagnostic.errorSign": "❌",
-    "diagnostic.warningSign": "⚠️",
+    "diagnostic.errorSign": "E",
+    "diagnostic.warningSign": "W",
     "diagnostic.infoSign": "i",
     "diagnostic.hintSign": "❔",
     // "codeLens.enable": true,
@@ -22,6 +22,7 @@
     "coc.preferences.formatOnType": true,
     "cSpell.showStatus": false,
     "cSpell.userWords": [
+      "Livelock",
       "mooping"
     ]
 }
