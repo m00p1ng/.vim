@@ -3,7 +3,14 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 let g:NERDTreeShowHidden=1
 let g:NERDTreeDirArrowExpandable = ''
 let g:NERDTreeDirArrowCollapsible = ''
-let g:NERDTreeIgnore=['\.git$', '\.idea$', '\.vscode$', '\.history$', '\.DS_Store$']
+let g:NERDTreeIgnore=[
+    \'\.git$',
+    \'\.idea$',
+    \'\.vscode$',
+    \'\.history$',
+    \'\.DS_Store$',
+    \'\node_modules$',
+\]
 let g:NERDTreeGitStatusShowIgnored = 1
 let g:nerdtree_sync_cursorline = 1
 let g:DevIconsEnableFoldersOpenClose = 1
