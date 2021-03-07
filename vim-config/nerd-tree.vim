@@ -1,4 +1,6 @@
 nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <leader>nn :NERDTreeFocus<CR>
+nnoremap <leader>nt :NERDTreeToggle<CR>
 
 let g:NERDTreeShowHidden=1
 let g:NERDTreeDirArrowExpandable = ''

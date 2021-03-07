@@ -16,6 +16,7 @@ let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_detect_modified=1
 let g:airline_detect_crypt=1
 let g:airline_detect_paste=1
+let g:airline_skip_empty_sections = 1
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1

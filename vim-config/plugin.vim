@@ -7,6 +7,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'brooth/far.vim'
 Plug 'chakrit/vim-thai-keys'
 Plug 'google/vim-searchindex'
+Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'liuchengxu/vista.vim'

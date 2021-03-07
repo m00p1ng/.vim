@@ -2,6 +2,8 @@ if has('nvim')
     set runtimepath+=~/.vim,~/.vim/after
     set packpath+=~/.vim
 endif
+let g:AutoPairs={}
+let b:AutoPairs={}
 
 " LOAD CONFIG
 let s:dirname = "~/.vim/vim-config"
@@ -107,3 +109,6 @@ let g:NERDCompactSexyComs=1
 let g:NERDDefaultAlign='left'
 
 let g:startify_files_number=20
+
+let g:AutoPairs={}
+let b:AutoPairs={}
