@@ -23,7 +23,6 @@ let g:coc_global_extensions = [
   \'coc-fzf-preview',
   \'coc-tag',
   \'coc-tsserver',
-  \'coc-tslint',
   \'coc-eslint',
   \'coc-java'
 \]

@@ -28,7 +28,7 @@ endfunction
 
 
 function! PySetting()
-    command! Run w|exec("!python " . fn)
+    command! Run w|exec("!python3 " . fn)
     command! Py w|exec("!python " . fn)
     command! Py3 w|exec("!python3 " . fn)
     command! Python w|exec("!python " .fn)
