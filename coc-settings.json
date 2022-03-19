@@ -2,7 +2,8 @@
     "typescript.format.enabled": true,
     "javascript.format.enabled": true,
     "eslint.autoFixOnSave": true,
-    "tslint.autoFixOnSave": true,
+    "eslint.packageManager": "yarn",
+    "eslint.nodePath": ".yarn/sdks",
     "diagnostic.errorSign": "E",
     "diagnostic.warningSign": "W",
     "diagnostic.infoSign": "i",
@@ -22,7 +23,9 @@
     "coc.preferences.formatOnType": true,
     "cSpell.showStatus": false,
     "cSpell.userWords": [
-      "Livelock",
-      "mooping"
+        "Livelock",
+        "mooping",
+        "nestjs",
+        "typeorm"
     ]
 }

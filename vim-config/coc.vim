@@ -24,7 +24,8 @@ let g:coc_global_extensions = [
   \'coc-tag',
   \'coc-tsserver',
   \'coc-eslint',
-  \'coc-java'
+  \'coc-java',
+  \'coc-emmet'
 \]
 
 if has('mac')

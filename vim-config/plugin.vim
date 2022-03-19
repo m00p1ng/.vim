@@ -13,7 +13,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'liuchengxu/vista.vim'
 Plug 'm00p1ng/ctest.vim'
 Plug 'm00p1ng/vim-code-dark'
-Plug 'mattn/emmet-vim'
 Plug 'metakirby5/codi.vim'
 Plug 'mhinz/vim-startify'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

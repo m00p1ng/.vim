@@ -9,7 +9,6 @@ let b:AutoPairs={}
 let s:dirname = "~/.vim/vim-config"
 exec "source " . s:dirname . "/plugin.vim"
 exec "source " . s:dirname . "/airline.vim"
-exec "source " . s:dirname . "/emmet.vim"
 exec "source " . s:dirname . "/keymap.vim"
 exec "source " . s:dirname . "/autocmd.vim"
 exec "source " . s:dirname . "/nerd-tree.vim"
